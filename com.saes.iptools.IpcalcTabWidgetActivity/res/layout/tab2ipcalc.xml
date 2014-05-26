@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo" >
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/ip_server" 
+		android:textColor="@color/solid_blue"/>
+
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/label"
+        android:layout_marginLeft="5dip"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text"
+        android:minWidth="150dp" />
+
+    <TextView
+        android:id="@+id/labelPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="100dp"
+        android:text="@string/port"
+        android:textColor="@color/solid_blue" />
+
+    <EditText
+        android:id="@+id/entryPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/labelPort"
+        android:layout_marginRight="5dip"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text"
+        android:maxWidth="150dp"
+        android:width="150dp" />
+
+    <EditText
+        android:id="@+id/editProgess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignRight="@+id/entry"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginBottom="5dip"
+        android:layout_below="@+id/entryPort"
+        android:background="@drawable/progress_box"
+        android:inputType="text"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editProgess"
+        android:textSize="11sp"
+        android:layout_alignLeft="@+id/entry"
+        android:text="@string/show_fails" />
+
+	<Button
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_toLeftOf="@+id/ok"
+        android:layout_below="@+id/editProgess"
+        android:text="@string/bt_clear" />
+    <Button
+    	android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editProgess"
+        android:layout_alignParentRight="true"
+        android:text="@string/bt_ok"/>
+        
+
+    <com.saes.iptools.LogTextBox
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ok"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/box"
+        android:scrollbars="vertical"
+        android:textColor="@color/negro" />
+
+    <EditText
+        android:id="@+id/editProgessOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editProgess"
+        android:layout_alignBottom="@+id/editProgess"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/progress_box_ok"
+        android:ems="10"
+        android:inputType="text"
+        android:maxWidth="150dp"
+        android:width="150dp" />
+
+</RelativeLayout>

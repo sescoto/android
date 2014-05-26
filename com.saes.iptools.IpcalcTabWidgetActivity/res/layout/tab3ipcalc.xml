@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/fondo">
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/lb_ipscan" android:textColor="@color/solid_blue"/>
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/label_diag"
+        android:layout_marginLeft="3dip"
+        android:inputType="number"
+        android:background="@android:drawable/editbox_background"
+        android:layout_below="@id/label"/>
+    <TextView
+        android:id="@+id/label_diag"
+        android:layout_width="5dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/addrbase"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/lb_diagonal" android:textColor="@color/solid_blue"
+        android:layout_below="@id/label"/>
+    <EditText
+        android:id="@+id/addrbase"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:inputType="text"
+        android:background="@android:drawable/editbox_background"
+		android:text="@string/ipaddr_def"
+        android:layout_below="@id/label"/>		
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/entry"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dip"
+        android:text="@string/bt_ok" />
+    <Button
+    	android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/ok"
+        android:layout_alignTop="@id/ok"
+        android:text="@string/bt_clear" />
+    <com.saes.iptools.LogTextBox
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ok"
+        android:layout_marginTop="2dip"
+        android:background="@drawable/box"
+        android:scrollbars="vertical"
+        android:textColor="@color/negro" />
+
+<!-- <TextView
+        android:id="@+id/labelRes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ok"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="30dip"
+        android:text="@string/lb_res" android:textColor="@color/solid_blue"/>-->
+</RelativeLayout>

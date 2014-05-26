@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/fondo">
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:text="@string/ip_server" android:textColor="@color/solid_blue"/>
+    <EditText
+        android:id="@+id/entry"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_below="@+id/label"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text" />
+    <TextView
+        android:id="@+id/labelPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/entry"
+        android:layout_marginLeft="10dip"
+        android:text="@string/port" android:textColor="@color/solid_blue"/>
+    <EditText
+        android:id="@+id/entryPort"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@+id/labelPort"
+        android:layout_toRightOf="@+id/entry"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text" />
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_toLeftOf="@+id/clear"
+        android:layout_below="@+id/checkBox1"
+        android:text="@string/bt_ok" />
+    <Button
+    	android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox1"
+        android:layout_alignParentRight="true"
+        android:text="@string/bt_clear" />
+    <com.saes.iptools.LogTextBox
+        android:id="@+id/text"
+        android:background="@drawable/box"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/ok"
+        android:layout_marginTop="2dip"
+        android:textColor="@color/negro"
+        android:scrollbars="vertical"/>
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/entryPort"
+        android:textSize="11dip"
+        android:layout_alignLeft="@+id/entry"
+        android:text="@string/show_fails" />
+
+</RelativeLayout>

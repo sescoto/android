@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, IpcalcTabWidgetActivity!</string>
+    <string name="app_name">IP-tools</string>
+    
+    <string name="ip_server">Servidor</string>
+    <string name="port">Puertos(s)</string>
+    <string name="bt_ok">Enviar</string>
+    <string name="bt_clear">Limpiar</string>
+    <string name="lb_res">Resultado</string>
+    <string name="lb_mask">Mascara: </string>
+    <string name="lb_hosts">Hosts: </string>
+	<string name="lb_addres">Direcciones: </string>
+	<string name="lb_addresIni">Direccion inicial: </string>
+	<string name="lb_addresEnd">Direccion final: </string>		
+    <string name="maskbits">Bits de mascara (1 &#8211; 32):</string>
+    <string name="show_fails">Muestra intentos fallidos</string>
+	<string name="ipaddr_def">10.36.0.55</string>
+</resources>
